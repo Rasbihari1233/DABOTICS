@@ -1,0 +1,14 @@
+# css
+- Display inline
+- Display Block
+- Display flex
+- Postion - abloute & relative
+- Border
+- Border radius
+- Margin
+- Padding
+- text-transform
+- transition
+- width
+- height
+- px, rem, vh, vw
