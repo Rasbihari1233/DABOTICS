@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Get your QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <input type="text" placeholder=" text or URL" id="QRtext">
+        <div id="imgBox">
+            <img src="" id="QRimage">
+        </div>
+        <button class="btn qrbutton" onclick="generateQR()">Generate QR Code</button>
+        <div class="dwn">
+            <p id="Watermark">Rasu Thakur❤️🤍💚</p>
+            <button id="dbtn" class="btn dwnd">Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        const dbtn = document.getElementById('dbtn')
+
+        dbtn.addEventListener('click', function () {
+            const qrimage = document.querySelector('#imgBox img');
+            console.log(qrimage)
+            const imgsrc = qrimage.src;
+            console.log(imgsrc)
+            window.open(imgsrc, '_blank')
+            // const anchor = document.createElement('a');
+            // anchor.href = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=rasuthakurgsrc';
+            // anchor.download = 'qr.png';
+            // anchor.style.display = 'none';
+
+            // document.body.appendChild(anchor)
+
+            // anchor.click()
+
+            // document.body.removeChild(anchor);
+        })
+    </script>
+</body>
+</html>
